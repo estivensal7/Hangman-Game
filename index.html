@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Hangman Game</title>
+
+	<!-- Bootstrap Link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	<!-- jQuery Link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!-- Custom CSS File -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+	<!-- Game Instructions -->
+	<div class="container headingContainer">
+	
+		<h1>Hangman!</h1>
+
+		<h3>Use the alphabet to guess the answer, or click 'Hint' to get a clue</h3>
+
+	</div>
+
+	<div id="buttons">
+	</div>
+
+	<!-- Alphabet Letters used for playing game -->
+<!-- 	<div class="letterButtons">
+		
+		<button type="button" class="btn btn-primary btnA" id="btnA">A</button>
+		<button type="button" class="btn btn-primary btnB" id="btnB">B</button>
+		<button type="button" class="btn btn-primary btnC" id="btnC">C</button>
+		<button type="button" class="btn btn-primary btnD" id="btnD">D</button>
+		<button type="button" class="btn btn-primary btnE" id="btnE">E</button>
+		<button type="button" class="btn btn-primary btnF" id="btnF">F</button>
+		<button type="button" class="btn btn-primary btnG" id="btnG">G</button>
+		<button type="button" class="btn btn-primary btnH" id="btnH">H</button>
+		<button type="button" class="btn btn-primary btnI" id="btnI">I</button>
+		<button type="button" class="btn btn-primary btnJ" id="btnJ">J</button>
+		<button type="button" class="btn btn-primary btnK" id="btnK">K</button>
+		<button type="button" class="btn btn-primary btnL" id="btnL">L</button>
+		<button type="button" class="btn btn-primary btnM" id="btnM">M</button>
+		<button type="button" class="btn btn-primary btnN" id="btnN">N</button>
+		<button type="button" class="btn btn-primary btnO" id="btnO">O</button>
+		<button type="button" class="btn btn-primary btnP" id="btnP">P</button>
+		<button type="button" class="btn btn-primary btnQ" id="btnQ">Q</button>
+		<button type="button" class="btn btn-primary btnR" id="btnR">R</button>
+		<button type="button" class="btn btn-primary btnS" id="btnS">S</button>
+		<button type="button" class="btn btn-primary btnT" id="btnT">T</button>
+		<button type="button" class="btn btn-primary btnU" id="btnU">U</button>
+		<button type="button" class="btn btn-primary btnV" id="btnV">V</button>
+		<button type="button" class="btn btn-primary btnW" id="btnW">W</button>
+		<button type="button" class="btn btn-primary btnX" id="btnX">X</button>
+		<button type="button" class="btn btn-primary btnY" id="btnY">Y</button>
+		<button type="button" class="btn btn-primary btnZ" id="btnZ">Z</button> -->
+		
+		<p id="category">Category</p>
+
+		<div id="guessedLetters">Guessed Letters</div>
+
+		<p id="myLives">Lives Remaining</p>
+
+		<p id="clue">Clue:</p>
+		
+		<canvas id="myCanvas" width="300" height="200" style="border:1px solid white;">
+		</canvas>
+
+		<div class="resetHintContainer">
+			
+			<button type="button" class="btn btn-primary btn-lg hintBtn" id="hintBtn">Get Hint</button>
+			<button type="button" class="btn btn-secondary btn-lg resetBtn" id="resetBtn">Play Again!</button>
+
+		</div>
+
+	</div>
+
+</body>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</html>

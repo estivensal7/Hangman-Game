@@ -1,0 +1,18 @@
+
+body {
+	background-color: #669BBD;
+	color: white;
+	text-align: center;
+}
+
+.headingContainer {
+	font-family: 'Lucida Console';
+}
+
+h1 {
+	font-size: 48px;
+}
+
+.myLives {
+	font-family: 'Lucida Console';
+}
